@@ -1,0 +1,159 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            transition: .3s;
+        }
+
+        body.dark {
+            background: #121212;
+            color: #eee;
+        }
+
+        header {
+            background: #222;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+            border-bottom: 2px solid #ff9800;
+        }
+
+        article {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 10%;
+            gap: 40px;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+        }
+
+        article:nth-of-type(even) {
+            flex-direction: row-reverse;
+            background: #f0f0f0;
+        }
+
+        article h3 {
+            margin-top: 15px;
+            color: #ff9800;
+        }
+
+        article ul li {
+            margin-bottom: 10px;
+        }
+
+        article img {
+            width: 280px;
+            height: 400px;
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+        article h1 {
+            margin-bottom: 20px;
+        }
+
+        article p,
+        article ul {
+            max-width: 600px;
+        }
+        aside {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+        }
+
+        aside a {
+            margin: 0 15px;
+            font-size: 1.2rem;
+            color: #222;
+            text-decoration: none;
+        }
+
+        aside a:hover {
+            color: #ff9800;
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background: #ff9800;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e68900;
+        }
+
+        @media(max-width:768px) {
+            article {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            article:nth-of-type(even) {
+                flex-direction: column;
+            }
+        }
+        #toggle-theme {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
